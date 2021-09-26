@@ -38,7 +38,7 @@ export default {
     },
     watch: {
         token (newToken) {
-            
+            this.$router.push('/')
         }
     }
 }

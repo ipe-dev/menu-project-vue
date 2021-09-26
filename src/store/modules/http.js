@@ -7,7 +7,7 @@ export default {
             const headers = {}
             headers['Content-Type'] = 'application/json'
             if (rootState.auth.token) {
-                headers['Authorization'] = `Token ${rootState.auth.token}`
+                headers['Authorization'] = `Bearer ${rootState.auth.token}`
             }
             const options = {
                 headers,

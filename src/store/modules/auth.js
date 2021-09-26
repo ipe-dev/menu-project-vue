@@ -18,7 +18,6 @@ export default {
                 {url: '/api/login', data},
                 {root: true}
             ).then(function(res) {
-                console.log(res)
                 commit('create', res.token)
             })
         }
